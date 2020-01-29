@@ -10,10 +10,16 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using Xarial.XCad.Delegates;
-using Xarial.XCad.Enums;
+using Xarial.XCad.Documents;
+using Xarial.XCad.Extensions;
+using Xarial.XCad.Features;
+using Xarial.XCad.Features.CustomFeature;
+using Xarial.XCad.Features.CustomFeature.Delegates;
+using Xarial.XCad.Geometry;
 using Xarial.XCad.Services;
-using Xarial.XCad.Structures;
+using Xarial.XCad.UI.PropertyPage;
+using Xarial.XCad.UI.PropertyPage.Enums;
+using Xarial.XCad.UI.PropertyPage.Structures;
 using Xarial.XCad.Utils.Reflection;
 
 namespace Xarial.XCad.Utils.CustomFeature

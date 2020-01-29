@@ -10,6 +10,7 @@ using System.Linq;
 using System.Diagnostics;
 using Xarial.XCad.Utils.PageBuilder.Base;
 using Xarial.XCad.Utils.Reflection;
+using Xarial.XCad.UI.PropertyPage.Base;
 
 namespace Xarial.XCad.Utils.PageBuilder.PageElements
 {

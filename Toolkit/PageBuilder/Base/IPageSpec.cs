@@ -9,8 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
-using Xarial.XCad.Attributes;
-using Xarial.XCad.Enums;
+using Xarial.XCad.UI.PropertyPage.Enums;
 
 namespace Xarial.XCad.Utils.PageBuilder.Base
 {

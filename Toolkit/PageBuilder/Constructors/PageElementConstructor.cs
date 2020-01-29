@@ -5,6 +5,7 @@
 //License: https://github.com/xarial/xcad/blob/master/LICENSE
 //*********************************************************************
 
+using Xarial.XCad.UI.PropertyPage.Base;
 using Xarial.XCad.Utils.PageBuilder.Base;
 
 namespace Xarial.XCad.Utils.PageBuilder.Constructors

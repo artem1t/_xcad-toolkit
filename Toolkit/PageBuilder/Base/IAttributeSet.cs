@@ -8,6 +8,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Xarial.XCad.UI.PropertyPage.Base;
 
 namespace Xarial.XCad.Utils.PageBuilder.Base
 {

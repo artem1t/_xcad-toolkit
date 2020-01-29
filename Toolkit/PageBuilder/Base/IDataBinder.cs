@@ -7,6 +7,7 @@
 
 using System;
 using System.Collections.Generic;
+using Xarial.XCad.UI.PropertyPage.Base;
 
 namespace Xarial.XCad.Utils.PageBuilder.Base
 {
