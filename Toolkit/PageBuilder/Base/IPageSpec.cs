@@ -16,7 +16,6 @@ namespace Xarial.XCad.Utils.PageBuilder.Base
     public interface IPageSpec
     {
         string Title { get; }
-        Image Icon { get; }
         PageOptions_e Options { get; }
     }
 }

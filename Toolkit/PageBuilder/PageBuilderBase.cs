@@ -13,7 +13,7 @@ using Xarial.XCad.Utils.PageBuilder.Internal;
 
 namespace Xarial.XCad.Utils.PageBuilder
 {
-    public class Builder<TPage, TGroup, TControl>
+    public class PageBuilderBase<TPage, TGroup, TControl>
         where TPage : IPage
         where TGroup : IGroup
         where TControl : IControl
@@ -23,7 +23,7 @@ namespace Xarial.XCad.Utils.PageBuilder
 
         private readonly ConstructorsContainer<TPage, TGroup> m_ControlConstructors;
 
-        public Builder(IDataModelBinder dataBinder,
+        public PageBuilderBase(IDataModelBinder dataBinder,
             IPageConstructor<TPage> pageConstr,
             params IPageElementConstructor<TGroup, TPage>[]
             ctrlsContstrs)

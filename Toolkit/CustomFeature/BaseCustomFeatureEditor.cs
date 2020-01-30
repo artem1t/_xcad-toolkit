@@ -29,7 +29,7 @@ namespace Xarial.XCad.Utils.CustomFeature
         where TData : class, new()
         where TPage : class, new()
     {
-        private IXNativePage<TPage> m_PmPage;
+        private IXPropertyPage<TPage> m_PmPage;
         private TPage m_CurData;
 
         private IXBody[] m_PreviewBodies;
