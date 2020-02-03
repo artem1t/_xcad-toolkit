@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -18,7 +18,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Core
         {
             private IBinding m_Source;
             private IBinding[] m_Dependencies;
-            IDependencyHandler m_Handler;
+            private IDependencyHandler m_Handler;
 
             internal UpdateStateData(IBinding src, IBinding[] deps, IDependencyHandler handler)
             {
@@ -32,7 +32,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Core
                 m_Handler.UpdateState(m_Source, m_Dependencies);
             }
         }
-        
+
         private Dictionary<IBinding, List<UpdateStateData>> m_Dependencies;
 
         public void Init(IRawDependencyGroup depGroup)

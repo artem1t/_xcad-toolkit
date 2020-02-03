@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using Xarial.XCad.Utils.PageBuilder.Base;
@@ -12,7 +12,9 @@ namespace Xarial.XCad.Utils.PageBuilder.PageElements
     public abstract class Group<TVal> : Control<TVal>, IGroup
     {
 #pragma warning disable CS0067
+
         protected override event ControlValueChangedDelegate<TVal> ValueChanged;
+
 #pragma warning restore CS0067
 
         protected Group(int id, object tag) : base(id, tag)

@@ -2,11 +2,10 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Xarial.XCad.Utils.Diagnostics
@@ -23,13 +22,13 @@ namespace Xarial.XCad.Utils.Diagnostics
         void Log(string msg);
     }
 
-    public static class ILoggerException 
+    public static class ILoggerException
     {
         /// <summary>
         /// Logs error
         /// </summary>
         /// <param name="ex">Exception</param>
-        public static void Log(this ILogger logger, Exception ex, bool stackTrace = true) 
+        public static void Log(this ILogger logger, Exception ex, bool stackTrace = true)
         {
             var msg = new StringBuilder();
 

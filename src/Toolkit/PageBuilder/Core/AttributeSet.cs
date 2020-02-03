@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -17,7 +17,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Core
     public class AttributeSet : IAttributeSet
     {
         private readonly Dictionary<Type, List<IAttribute>> m_Attributes;
-        
+
         public MemberInfo BoundMemberInfo { get; private set; }
         public Type BoundType { get; private set; }
         public string Description { get; private set; }
@@ -61,7 +61,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Core
             return GetAll<TAtt>().First();
         }
 
-        public IEnumerable<TAtt> GetAll<TAtt>() 
+        public IEnumerable<TAtt> GetAll<TAtt>()
             where TAtt : IAttribute
         {
             var atts = new List<IAttribute>();

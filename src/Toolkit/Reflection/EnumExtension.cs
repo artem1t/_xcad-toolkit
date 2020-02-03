@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -27,11 +27,11 @@ namespace Xarial.XCad.Utils.Reflection
 
             var enumValues = new List<Enum>();
 
-            foreach (Enum en in Enum.GetValues(enumType)) 
+            foreach (Enum en in Enum.GetValues(enumType))
             {
                 enumValues.Add(en);
             }
-            
+
             var values = enumValues.ToDictionary(e => e,
                 e =>
                 {
@@ -45,7 +45,6 @@ namespace Xarial.XCad.Utils.Reflection
                     }
 
                     return text;
-
                 });
 
             return values;

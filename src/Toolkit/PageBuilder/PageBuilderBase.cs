@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -33,7 +33,7 @@ namespace Xarial.XCad.Utils.PageBuilder
 
             m_ControlConstructors = new ConstructorsContainer<TPage, TGroup>(ctrlsContstrs);
         }
-        
+
         public virtual TPage CreatePage<TModel>(TModel model)
         {
             var page = default(TPage);
@@ -43,7 +43,7 @@ namespace Xarial.XCad.Utils.PageBuilder
             IRawDependencyGroup dependencies;
 
             m_DataBinder.Bind(model,
-                atts => 
+                atts =>
                 {
                     page = m_PageConstructor.Create(atts);
                     return page;

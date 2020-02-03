@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -16,7 +16,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Core
         public event Action<IBinding> ControlUpdated;
 
         public event Action<IBinding> ModelUpdated;
-        
+
         public IControl Control { get; private set; }
 
         object IBinding.Model

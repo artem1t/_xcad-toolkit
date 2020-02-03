@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -22,7 +22,7 @@ namespace Xarial.XCad.Utils.Reflection
 
             if (value != null)
             {
-                if (!type.IsAssignableFrom(value.GetType()) 
+                if (!type.IsAssignableFrom(value.GetType())
                     && (typeof(IConvertible)).IsAssignableFrom(type))
                 {
                     try

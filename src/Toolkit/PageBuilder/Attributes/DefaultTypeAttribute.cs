@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -14,7 +14,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Attributes
     public class DefaultTypeAttribute : Attribute, IDefaultTypeAttribute
     {
         public Type Type { get; private set; }
-        
+
         public DefaultTypeAttribute(Type type)
         {
             Type = type;

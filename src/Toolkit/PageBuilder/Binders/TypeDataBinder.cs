@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -12,9 +12,7 @@ using System.Linq;
 using System.Reflection;
 using Xarial.XCad.UI.PropertyPage.Attributes;
 using Xarial.XCad.UI.PropertyPage.Base;
-using Xarial.XCad.Utils.PageBuilder.Attributes;
 using Xarial.XCad.Utils.PageBuilder.Base;
-using Xarial.XCad.Utils.PageBuilder.Base.Attributes;
 using Xarial.XCad.Utils.PageBuilder.Core;
 
 namespace Xarial.XCad.Utils.PageBuilder.Binders
@@ -115,6 +113,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Binders
                 binding.UpdateControl();
             }
         }
+
         private IEnumerable<IAttribute> ParseAttributes(
             object[] customAtts, out string name, out string desc, out object tag)
         {
@@ -139,7 +138,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Binders
             foreach (var prp in type.GetProperties())
             {
                 var prpType = prp.PropertyType;
-                
+
                 var atts = GetAttributeSet(prp, nextCtrlId);
 
                 if (!atts.Has<IIgnoreBindingAttribute>())
@@ -160,10 +159,10 @@ namespace Xarial.XCad.Utils.PageBuilder.Binders
                     if (atts.Has<IDependentOnAttribute>())
                     {
                         var depAtt = atts.Get<IDependentOnAttribute>();
-                        dependencies.RegisterDependency(binding, 
+                        dependencies.RegisterDependency(binding,
                             depAtt.Dependencies, depAtt.DependencyHandler);
                     }
-                    
+
                     var isGroup = ctrl is IGroup;
 
                     if (isGroup)

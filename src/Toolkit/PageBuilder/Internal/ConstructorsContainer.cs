@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
@@ -11,13 +11,12 @@ using System.Linq;
 using Xarial.XCad.UI.PropertyPage.Base;
 using Xarial.XCad.Utils.PageBuilder.Attributes;
 using Xarial.XCad.Utils.PageBuilder.Base;
-using Xarial.XCad.Utils.PageBuilder.Base.Attributes;
 using Xarial.XCad.Utils.PageBuilder.Core;
 using Xarial.XCad.Utils.PageBuilder.Exceptions;
 
 namespace Xarial.XCad.Utils.PageBuilder.Internal
 {
-    internal class ConstructorsContainer<TPage, TGroup> 
+    internal class ConstructorsContainer<TPage, TGroup>
         where TPage : IPage
         where TGroup : IGroup
     {
@@ -64,7 +63,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Internal
                             else
                             {
                                 throw new OverdefinedConstructorException(constr.GetType(), type);
-                            }   
+                            }
                         }
                         else
                         {
@@ -155,7 +154,6 @@ namespace Xarial.XCad.Utils.PageBuilder.Internal
                 {
                     throw new ConstructorNotFoundException(type, "Too many constructors registered");
                 }
-                
             }
             else
             {

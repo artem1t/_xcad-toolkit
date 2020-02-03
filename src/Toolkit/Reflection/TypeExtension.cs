@@ -2,11 +2,10 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using System;
-using System.Linq;
 using System.Runtime.InteropServices;
 using Xarial.XCad.Reflection;
 
@@ -67,7 +66,7 @@ namespace Xarial.XCad.Utils.Reflection
             att = thisAtt;
             return res;
         }
-        
+
         /// <summary>
         /// Checks if this type can be assigned to the generic type
         /// </summary>
@@ -171,7 +170,6 @@ namespace Xarial.XCad.Utils.Reflection
             {
                 type.Assembly.TryGetAttribute<ComVisibleAttribute>(a => isComVisible = a.Value);
             }
-            
 
             return isComVisible;
         }

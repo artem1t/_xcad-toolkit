@@ -2,7 +2,7 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
 using Xarial.XCad.UI.PropertyPage.Base;
@@ -16,6 +16,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Constructors
             where TElem : IControl
     {
         protected abstract TElem Create(TPage page, IAttributeSet atts);
+
         protected abstract TElem Create(TGroup group, IAttributeSet atts);
 
         protected virtual TElem Create(TPage page, IAttributeSet atts, ref int idRange)

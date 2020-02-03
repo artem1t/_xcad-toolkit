@@ -2,15 +2,13 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
-using System;
-using System.Linq;
 using System.Diagnostics;
-using Xarial.XCad.Utils.PageBuilder.Base;
-using Xarial.XCad.Utils.Reflection;
+using System.Linq;
 using Xarial.XCad.UI.PropertyPage.Base;
+using Xarial.XCad.Utils.Reflection;
 
 namespace Xarial.XCad.Utils.PageBuilder.PageElements
 {

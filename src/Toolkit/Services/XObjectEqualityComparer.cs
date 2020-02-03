@@ -2,12 +2,10 @@
 //xCAD
 //Copyright(C) 2020 Xarial Pty Limited
 //Product URL: https://www.xcad.net
-//License: https://github.com/xarial/xcad/blob/master/LICENSE
+//License: https://xcad.xarial.com/license/
 //*********************************************************************
 
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Xarial.XCad.Services
 {
@@ -16,12 +14,12 @@ namespace Xarial.XCad.Services
     {
         public bool Equals(TObj x, TObj y)
         {
-            if (object.ReferenceEquals(x, y)) 
+            if (object.ReferenceEquals(x, y))
             {
                 return true;
             }
 
-            if (x == null || y == null) 
+            if (x == null || y == null)
             {
                 return false;
             }
