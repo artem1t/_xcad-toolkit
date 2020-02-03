@@ -19,7 +19,7 @@
     <Description>Framework for developing CAD applications</Description>
     <RepositoryType>git</RepositoryType>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageIconUrl></PackageIconUrl>
+    <PackageIconUrl>https://xcad.xarial.com/icon.png</PackageIconUrl>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
