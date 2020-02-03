@@ -20,7 +20,7 @@ namespace Xarial.XCad.Utils.PageBuilder.Binders
     {
         private IList<PropertyInfo> m_Parents;
 
-        internal PropertyInfo Property { get; private set; }
+        public PropertyInfo Property { get; private set; }
 
         internal PropertyInfoBinding(TDataModel dataModel, IControl control,
             PropertyInfo prpInfo, IList<PropertyInfo> parents)
