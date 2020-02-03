@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\base\Base\Base.csproj" />
-    <ProjectReference Include="..\..\core\Core\Core.csproj" />
+    <PackageReference Include="Xarial.XCad" Version="0.1.0" />
   </ItemGroup>
   
 </Project>
